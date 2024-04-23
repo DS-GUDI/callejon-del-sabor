@@ -1,18 +1,13 @@
-# Astro Starter Kit: Minimal
+## Important notes
+Every hard change or some additions to this project must be declared on this documentation. 
+If you haven't some process or workflow clear please send me a request to modify and put the 
+necessary information here.
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## Project Structure
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+Every component, data file or modification must be declared on the next directory tree.
+If it isn't a confortable process to you, create new README.md in every created directory that 
+you need to explain more deeper.
 
 ```text
 /
@@ -24,6 +19,7 @@ Inside of your Astro project, you'll see the following folders and files:
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+For example if we add in `src/parges` a component called `nosotros.astro` the automatic created route by astro will be. `/nosotros`
 
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
@@ -41,7 +37,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
