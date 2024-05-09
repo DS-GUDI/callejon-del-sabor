@@ -213,3 +213,25 @@ import S2Card from '../components/S2Card.astro';
 		1444px to + (HD and Full HD Devices) */
 	</style>
 </html>
+
+<style is:global>
+	:root{
+		--font-primary: Haettenschweiler;
+		--primary: #E34D2B;
+		--secondary: #B83E23;
+		--white: #FFFFFFF;
+		--black: #111111;
+		--warm-black: #1E1E1E;
+	}
+
+	*{
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+	}
+
+	html{
+		font-size: 62.5%;
+		font-family: var(--font-primary), Arial;
+	}
+</style>
