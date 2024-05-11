@@ -1,8 +1,8 @@
 ---
-
+import S2Card from '../components/S2Card.astro';
 ---
 
-<html lang="en">
+<html lang="es-MX">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -11,10 +11,23 @@
 		<title>Astro</title>
 	</head>
 	<body>
+		<section class="seccion1-logo">
 	<section class="seccion1-logo">
 			<div>
 				<img src="" alt="logo">
 			</div>
+		</section>
+
+		<section class="seccion2-restaurant">
+			<S2Card name="Hamburguesas The King1"></S2Card>
+			<S2Card name="Hamburguesas The King2"></S2Card>
+			<S2Card name="Hamburguesas The King3"></S2Card>
+			<S2Card name="Hamburguesas The King4"></S2Card>
+			<S2Card name="Hamburguesas The King5"></S2Card>
+			<S2Card name="Hamburguesas The King6"></S2Card>
+			<S2Card name="Hamburguesas The King7"></S2Card>
+			<S2Card name="Hamburguesas The King8"></S2Card>
+			<S2Card name="Hamburguesas The King9"></S2Card>
 		</section>
 
 		<section class="seccion2-restaurantes">
@@ -154,6 +167,51 @@
 			</div>
 		</section>
 	</body>
+	<style>
+		.seccion2-restaurant {
+			width: 95%;
+			height: auto;
+			background-color: #ccc;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 40px;
+			gap: 40px 80px;
+		}
+
+		@media(min-width:576px){
+        	.seccion2-restaurant {
+
+        	}
+    	}
+
+		@media(min-width:991px){
+			
+    	}
+
+    	@media(min-width:767px){
+			.seccion2-restaurant {
+				
+			}
+    	}
+
+    	@media(min-width:576px){
+			.seccion2-restaurant {
+				
+			}
+    	}
+
+		/* @media (min-width:1199px){
+			.seccion2-restaurant {
+				gap: 40px 100px;
+			}
+		} */
+		/* 576px to 767px (Tablet Mini)
+		768px to 991px (Large Tablets, Laptops)
+		992px to 1199px (HD Devices)
+		1444px to + (HD and Full HD Devices) */
+	</style>
 </html>
 
 <style is:global>

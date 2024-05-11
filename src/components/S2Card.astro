@@ -1,0 +1,65 @@
+---
+const {name} = Astro.props;
+---
+<div class="s2-card">
+    <div class="s2-card-text-bg">
+        <p>{name}</p>
+    </div>
+    <div class="tabs"></div>
+</div>
+
+<style>
+    .s2-card {
+        width: 350px;
+        height: 200px;
+        border: 2px solid #E34D2B;
+        border-radius: 20px;
+        background-image: url(https://via.assets.so/img.jpg?w=350&h=200&tc=gray&bg=white);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        position: relative;
+    }
+
+    @media(min-width:991px){
+        
+    }
+
+    @media(min-width:767px){
+        
+    }
+
+    @media(min-width:576px){
+        
+    }
+
+    .s2-card-text-bg {
+        width: auto;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 2px;
+        border-radius: 20px;
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .s2-card-text-bg p {
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .tabs {
+        width: 20px;
+        height: 100px;
+        background-color: #E34D2B;
+        border-radius: 0px 10px 10px 0px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 25%;
+        right: -20px;
+    }
+</style>
