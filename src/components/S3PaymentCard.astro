@@ -1,0 +1,136 @@
+---
+const {method, name1, description1, name2, description2, changeMethod} = Astro.props;
+---
+
+<div class="s3-card">
+    <div class="tab-method">
+        <h2>{method}</h2>
+    </div>
+    <div class="s3-method part1 bg-property">
+        <div class="bg-alpha br-part1">
+            <h2>{name1}</h2>
+            <p>{description1}</p>
+            <i class="fa-solid fa-utensils"></i>
+        </div>
+    </div>
+    <div class="s3-method part2 bg-property">
+        <div class="bg-alpha br-part2">
+            <h2>{name2}</h2>
+            <p>{description2}</p>
+            <i class="fa-solid fa-utensils"></i>
+        </div>
+    </div>
+    <div class="mobile-part">
+        <h2>{changeMethod}</h2>
+        <i class="fa-solid fa-utensils"></i>
+    </div>
+</div>
+
+
+<style>
+    .s3-card {
+        width: 400px;
+        height: 250px;
+        background-color: aqua;
+        border-radius: 20px;
+        display: flex;
+        position: relative;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        position: relative;
+    }
+
+    .s3-card .tab-method {
+        width: 310px;
+        background-color: var(--secondary);
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 0px 20px;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .s3-card .tab-method h2 {
+        font-size: 45px;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+    }
+
+    .s3-card .s3-method {
+        width: 200px;
+        height: auto;
+    }
+
+    .s3-card .part1 {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR675nyEmo96un-JGLSD6wqoK1zrRug6TZ-pA&usqp=CAU);
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .s3-card .part2 {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvFtIX-8mLTUuIfO3ndF7liWS9hsG4MMiLHg&usqp=CAU);
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    .bg-property {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bg-alpha {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:center;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+    }
+
+    .br-part1 {
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .br-part2 {
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    .bg-alpha h2,p{
+        color: white;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 30px;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    .bg-alpha p {
+        text-transform: none;
+        font-size: 20px;
+        text-align: center;
+        margin: 0px 10px;
+    }
+
+    .s3-card .mobile-part {
+        width: 200px;
+        height: 250px;
+        background-color: white;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .s3-card .mobile-part h2 {
+        font-size: 20px;
+        color: var(--primary);
+        font-weight: 500;
+        text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+    }
+</style>

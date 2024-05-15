@@ -12,7 +12,7 @@ const {name} = Astro.props;
     .s2-card {
         width: 350px;
         height: 200px;
-        border: 2px solid #E34D2B;
+        border: 2px solid var(--primary);
         border-radius: 20px;
         background-image: url(https://via.assets.so/img.jpg?w=350&h=200&tc=gray&bg=white);
         background-size: cover;
@@ -45,8 +45,7 @@ const {name} = Astro.props;
     }
 
     .s2-card-text-bg p {
-        color: white;
-        font-weight: bold;
+        color: var(--white);
         font-size: 18px;
         margin: 0px;
         padding: 5px;
@@ -55,7 +54,7 @@ const {name} = Astro.props;
     .tabs {
         width: 20px;
         height: 100px;
-        background-color: #E34D2B;
+        background-color: var(--primary);
         border-radius: 0px 10px 10px 0px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
         position: absolute;

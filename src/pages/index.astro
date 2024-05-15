@@ -1,177 +1,176 @@
 ---
-import S2Card from '../components/S2Card.astro';
+import S2Card from "../components/S2Card.astro";
+import S3Card from "../components/S3PaymentCard.astro";
 ---
 
 <html lang="es-MX">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
 	<body>
 		<section class="seccion1-logo">
-	<section class="seccion1-logo">
-			<div>
-				<img src="" alt="logo">
-			</div>
-		</section>
+			<section class="seccion1-logo">
+				<div>
+					<img src="" alt="logo" />
+				</div>
+			</section>
 
-		<section class="seccion2-restaurant">
-			<S2Card name="Hamburguesas The King1"></S2Card>
-			<S2Card name="Hamburguesas The King2"></S2Card>
-			<S2Card name="Hamburguesas The King3"></S2Card>
-			<S2Card name="Hamburguesas The King4"></S2Card>
-			<S2Card name="Hamburguesas The King5"></S2Card>
-			<S2Card name="Hamburguesas The King6"></S2Card>
-			<S2Card name="Hamburguesas The King7"></S2Card>
-			<S2Card name="Hamburguesas The King8"></S2Card>
-			<S2Card name="Hamburguesas The King9"></S2Card>
-		</section>
+			<section class="seccion2-restaurant">
+				<S2Card name="Hamburguesas The King1" />
+				<S2Card name="Hamburguesas The King2" />
+				<S2Card name="Hamburguesas The King3" />
+				<S2Card name="Hamburguesas The King4" />
+				<S2Card name="Hamburguesas The King5" />
+				<S2Card name="Hamburguesas The King6" />
+				<S2Card name="Hamburguesas The King7" />
+				<S2Card name="Hamburguesas The King8" />
+				<S2Card name="Hamburguesas The King9" />
+			</section>
 
-		<section class="seccion2-restaurantes">
-			<div class="s2-card">
-				<div class="pestana">
-					<i>10</i>
-					<i>10</i>
-					<i>10</i>
-				</div>
-				<img src="" alt="">
-				<p>Hamburguesas The King</p>
-			</div>
-			<div class="s2-card">
-				<div class="pestana">
-					<i>10</i>
-					<i>10</i>
-					<i>10</i>
-				</div>
-				<img src="" alt="">
-				<p>Hamburguesas The King</p>
-			</div>
-			<div class="s2-card">
-				<div class="pestana">
-					<i>10</i>
-					<i>10</i>
-					<i>10</i>
-				</div>
-				<img src="" alt="">
-				<p>Hamburguesas The King</p>
-			</div>
-		</section>
-
-		<section class="seccion3-banner">
-			<h2>Nos ajustamos a tus necesidades</h2>
-			<div class="s3-card">
-				<h2>Método de pago</h2>
-				<div class="metodo1">
-					<h2>Tarjeta</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, minus?</p>
-					<i>+</i>
-				</div>
-				<div class="metodo2">
-					<h2>Tarjeta</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, minus?</p>
-					<i>+</i>
-				</div>
-			</div>
-
-			<div class="s3-card">
-				<h2>Método de pago</h2>
-				<div class="metodo1">
-					<h2>Tarjeta</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, minus?</p>
-					<i>+</i>
-				</div>
-				<div class="metodo2">
-					<h2>Tarjeta</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, minus?</p>
-					<i>+</i>
-				</div>
-			</div>
-
-			<div class="s3-card">
-				<h2>Método de pago</h2>
-				<div class="metodo1">
-					<h2>Tarjeta</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, minus?</p>
-					<i>+</i>
-				</div>
-				<div class="metodo2">
-					<h2>Tarjeta</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, minus?</p>
-					<i>+</i>
-				</div>
-			</div>
-		</section>
-
-		<section class="seccion4-testimonios">
-			<div class="testimonios">
-				<div class="comentario">
-					<i>+</i>
-					<h2>Nombre</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, incidunt?</p>
+			<section class="seccion3-payment">
+				<div class="S3-title">
+					<h2>Nos ajustamos a tus necesidades</h2>
 				</div>
 
-				<div class="comentario">
-					<i>+</i>
-					<h2>Nombre</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, incidunt?</p>
+				<div class="s3-cards">
+
+					<S3Card
+						method="Método de pago"
+						name1="Tarjeta"
+						description1="Puedes pagar con tarjetas de debito y crédito"
+						name2="Efectivo" 
+						description2="Puedes pagar con efectivo"
+						changeMethod="Cambiar método de pago">
+					</S3Card>
+				
+					<S3Card
+						method="Método de entrega"
+						name1="Recoge en tienda"
+						description1="Agenda tu visita"
+						name2="Envio a domicilio" 
+						description2="Nuestros operadores entregaran en domicilio"
+						changeMethod="Cambiar método de entrega">
+					</S3Card>
+			
+					<S3Card
+						method="Método de pedido"
+						name1="Personal"
+						description1="Comidas personales"
+						name2="Empresarial" 
+						description2="Comidas empresariales"
+						changeMethod="Cambiar método de pedido">
+					</S3Card>
 				</div>
+		
+		<div class="S3-ordena">
+			<i class="fa-solid fa-utensils"></i>
+			<h2>Ordena ahora</h2>
+			<i class="fa-solid fa-utensils"></i>
+		</div>
+	</section>
 
-				<div class="separacion"></div>
+			<section class="seccion4-testimonios">
+				<div class="testimonios">
+					<div class="comentario">
+						<i>+</i>
+						<h2>Nombre</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Consequatur, incidunt?
+						</p>
+					</div>
 
-				<div class="ubicacion">
-					<h2>Ubicación</h2>
-					<div class="direccion">
-						<h2>Lorem, ipsum dolor.</h2>
-						<button>Lorem, ipsum dolor.</button>
-						<div class="redes">
-							<i>+</i>
-							<i>+</i>
-							<i>+</i>
-							<i>+</i>
-						</div>
-						<div class="mapa">
-							<img src="" alt="">
+					<div class="comentario">
+						<i>+</i>
+						<h2>Nombre</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Consequatur, incidunt?
+						</p>
+					</div>
+
+					<div class="separacion"></div>
+
+					<div class="ubicacion">
+						<h2>Ubicación</h2>
+						<div class="direccion">
+							<h2>Lorem, ipsum dolor.</h2>
+							<button>Lorem, ipsum dolor.</button>
+							<div class="redes">
+								<i>+</i>
+								<i>+</i>
+								<i>+</i>
+								<i>+</i>
+							</div>
+							<div class="mapa">
+								<img src="" alt="" />
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section class="seccion6-footer">
-			<div class="contactos">
-				<i>+</i>
-				<p>Lorem ipsum dolor sit amet.</p>
-				<i>+</i>
-				<p>Lorem, ipsum dolor.</p>
-			</div>
-
-			<div class="botones-contacto">
-				<button>Lorem, ipsum dolor.</button>
-				<button>Lorem, ipsum dolor.</button>
-
-				<p>Lorem ipsum dolor sit amet.</p>
-				<p>Lorem ipsum dolor sit amet.</p>
-
-				<div class="gudi">
-					<p>Proyecto elaborado por GUDI</p>
+			<section class="seccion6-footer">
+				<div class="contactos">
+					<i>+</i>
+					<p>Lorem ipsum dolor sit amet.</p>
+					<i>+</i>
+					<p>Lorem, ipsum dolor.</p>
 				</div>
-			</div>
 
-			<div class="asociate">
-				<p>Lorem ipsum dolor sit.</p>
-				<p>Lorem, ipsum dolor.</p>
-				<button>Lorem, ipsum.</button>
-			</div>
+				<div class="botones-contacto">
+					<button>Lorem, ipsum dolor.</button>
+					<button>Lorem, ipsum dolor.</button>
+
+					<p>Lorem ipsum dolor sit amet.</p>
+					<p>Lorem ipsum dolor sit amet.</p>
+
+					<div class="gudi">
+						<p>Proyecto elaborado por GUDI</p>
+					</div>
+				</div>
+
+				<div class="asociate">
+					<p>Lorem ipsum dolor sit.</p>
+					<p>Lorem, ipsum dolor.</p>
+					<button>Lorem, ipsum.</button>
+				</div>
+			</section>
 		</section>
 	</body>
+
+	<style is:global>
+		:root {
+			--font-primary: Haettenschweiler;
+			--primary: #e34d2b;
+			--secondary: #b83e23;
+			--white: #FFFFFFF;
+			--black: #111111;
+			--warm-black: #1e1e1e;
+		}
+
+		* {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+
+		html {
+			font-size: 62.5%;
+			font-family: var(--font-primary), Arial;
+		}
+	</style>
+
 	<style>
 		.seccion2-restaurant {
 			width: 95%;
 			height: auto;
-			background-color: #ccc;
+			background-color: var(--white);
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -180,58 +179,68 @@ import S2Card from '../components/S2Card.astro';
 			gap: 40px 80px;
 		}
 
-		@media(min-width:576px){
-        	.seccion2-restaurant {
-
-        	}
-    	}
-
-		@media(min-width:991px){
-			
-    	}
-
-    	@media(min-width:767px){
+		@media (min-width: 576px) {
 			.seccion2-restaurant {
-				
 			}
-    	}
+		}
 
-    	@media(min-width:576px){
-			.seccion2-restaurant {
-				
-			}
-    	}
+		@media (min-width: 991px) {
+		}
 
-		/* @media (min-width:1199px){
+		@media (min-width: 767px) {
 			.seccion2-restaurant {
-				gap: 40px 100px;
 			}
-		} */
-		/* 576px to 767px (Tablet Mini)
-		768px to 991px (Large Tablets, Laptops)
-		992px to 1199px (HD Devices)
-		1444px to + (HD and Full HD Devices) */
+		}
+
+		@media (min-width: 576px) {
+			.seccion2-restaurant {
+			}
+		}
+
+		/* Seccion 3 payment methods */
+		.seccion3-payment {
+			width: 100%;
+			background-color: var(--primary);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+		.seccion3-payment .S3-title {
+			background-color: rgba(0, 0, 0, 0.4);
+			border-radius: 20px;
+			margin: 35px auto 30px auto;
+		}
+
+		.seccion3-payment h2 {
+			color: white;
+			text-transform: uppercase;
+			font-size: 50px;
+			font-weight: 250;
+			padding: 5px 10px;
+		}
+
+		.seccion3-payment .s3-cards {
+			width: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 40px;
+			margin-top: 80px;
+			margin-bottom: 100px;
+		}
+
+		.seccion3-payment .S3-ordena {
+			background-color: var(--secondary);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 15px;
+			box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+			position: absolute;
+			bottom: -30px;
+		}
 	</style>
 </html>
-
-<style is:global>
-	:root{
-		--font-primary: Haettenschweiler;
-		--primary: #E34D2B;
-		--secondary: #B83E23;
-		--white: #FFFFFFF;
-		--black: #111111;
-		--warm-black: #1E1E1E;
-	}
-
-	*{
-		box-sizing: border-box;
-		padding: 0;
-		margin: 0;
-	}
-
-	html{
-		font-size: 62.5%;
-		font-family: var(--font-primary), Arial;
-	}
-</style>
